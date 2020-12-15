@@ -1,0 +1,55 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-Div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-image: url("media/geometric.png");
+}
+
+.content {
+  margin-top: 10px;
+}
+
+.matchResult h1 {
+    text-align: center;
+}
+
+.matchPlayer {
+  display: flex;
+  justify-content: center;
+}
+.matchPlayer h2 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.scoreWrapper {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.scoreNumbers {
+  font-size: 55px;
+}
+
+.options-Div {
+  margin-top: 100px;
+}
+
+.options-Div button {
+  font-size: 80px;
+  border: 5px solid black;
+  border-radius: 25px;
+  padding: 0 15px;
+}

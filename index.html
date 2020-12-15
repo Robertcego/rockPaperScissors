@@ -10,7 +10,17 @@
     <title>Rock, Paper, Scissors!</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -19,31 +29,33 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
+    <main>
+      <div class="main-Div">
+        <div class="content">
+          <div class="matchResult">
+            <h1>Match Score:</h1>
+          </div>
+          <div class="matchPlayer">
+            <h2>Computer</h2>
+            <h2>Player</h2>
+          </div>
+          <div id="score" class="scoreWrapper">
+            <div class="scoreNumbers computerScore">1</div>
+            <div class="scoreNumbers playerScore">0</div>
+          </div>
+        </div>
+        <div class="scoreMessage scoreWrapper">
+          <h1>You Win!</h1>
+        </div>
 
-    <script>
-      function computerPlay() {
-        let computerChoice = ["Rock", "Paper", "Scissors"];
-        return (random =
-          computerChoice[Math.floor(Math.random() * computerChoice.length)]);
-      }
-      computerPlay();
-      console.log(random);
+        <div class="options-Div">
+          <button id="rock">Rock</button>
+          <button id="paper">Paper</button>
+          <button id="scissors">Scissors</button>
+        </div>
+      </div>
+    </main>
 
-      function game() {
-        function playRound(playerSelection, computerSelection) {
-          return "You Lose! Paper beats Rock".toUpperCase();
-        }
-
-        const playerSelection = prompt("Type your choice:");
-        const computerSelection = computerPlay();
-        console.log(playRound(playerSelection, computerSelection));
-      }
-
-      game();
-      game();
-      game();
-      game();
-      game();
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
